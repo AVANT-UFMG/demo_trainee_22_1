@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="demo_trainee22_1" exec="odom.py" name="odom" namespace="demo" />
+    <node pkg="demo_trainee22_1" exec="plot_position.py" name="plot_position" namespace="demo" />
+    <node pkg="robot_localization" exec="ekf_node" name="ekf_node" namespace="demo" />
+</launch>
